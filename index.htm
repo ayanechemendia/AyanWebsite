@@ -5,225 +5,375 @@
 <head>
     <title>Ayan's Web Page</title>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayan Felipe Echemendia-Carranza">
+    <meta name="description" content="Ayan Felipe Echemendia-Carranza's personal website, education, interests, and goals in computer programming.">
+    <meta name="keywords" content="Ayan Echemendia-Carranza, computer programming, web development, HTML, programming">
 
-<meta name="author" content="Ayan Felipe Echemendia-Carranza">
-<meta name="description" content="Ayan Felipe Echemendia-Carranza's personal website, education, interests, and goals in computer programming.">
-<meta name="keywords" content="Ayan Echemendia-Carranza, computer programming, web development, HTML, programming">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
+    <style>
 
+        /* ***** General Page Styling ***** */
+
+        body {
+            max-width: 1000px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222222;
+            background-image: url("images/technology-background.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            color: #17365d;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #17365d;
+        }
+
+        /* ***** Header Styling ***** */
+
+        header {
+            background-image: url("images/technology-banner.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 25px;
+            text-align: center;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* ***** Navigation Styling ***** */
+
+        nav {
+            background-color: #d9eaf7;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #17365d;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ***** Main Content Styling ***** */
+
+        main {
+            padding: 20px;
+            background-color: rgba(242, 246, 250, 0.95);
+        }
+
+        .section-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .programming-image {
+            max-width: 500px;
+        }
+
+        .education-image {
+            max-width: 600px;
+        }
+
+        .gaming-image {
+            max-width: 450px;
+        }
+
+        .center-image {
+            text-align: center;
+        }
+
+        /* ***** IDs Below ***** */
+
+        #wrapper {
+            border: 2px solid #17365d;
+        }
+
+        #gaming {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        /* ***** Classes Below ***** */
+
+        .important {
+            color: #17365d;
+            font-weight: bold;
+        }
+
+        .contact-link {
+            color: white;
+        }
+
+        .contact-heading {
+            color: white;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+
+        /* ***** Footer Styling ***** */
+
+        footer {
+            background-color: #17365d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer p {
+            margin: 10px;
+        }
+
+    </style>
 </head>
 
-<body style="max-width: 1000px; margin: auto; font-family: Arial; color: #222222; background-image: url('images/technology-background.jpg'); background-size: cover; background-attachment: fixed;">
+<body>
 
-```
-<!-- Header with technology background image -->
-<header style="background-image: url('images/technology-banner.jpg'); background-size: cover; background-position: center; color: white; padding: 60px 25px; text-align: center;">
+<div id="wrapper">
 
-    <h1>Ayan Felipe Echemendia-Carranza</h1>
+    <!-- Header with technology background image -->
+    <header>
 
-    <p style="font-size: 18px;">
-        Computer Programming Student | Web Development | Technology
-    </p>
-
-</header>
-
-
-<!-- Navigation menu -->
-<nav style="background-color: #d9eaf7; padding: 15px; text-align: center;">
-
-    <a href="index.htm">Home</a> |
-    <a href="resume.htm">My Resume</a> |
-    <a href="#about">About Me</a> |
-    <a href="#education">Education</a> |
-    <a href="#goals">My Goals</a> |
-    <a href="#contact">Contact</a>
-
-</nav>
-
-
-<!-- Main content -->
-<main style="padding: 20px; background-color: rgba(242, 246, 250, 0.95);">
-
-
-    <!-- About Me section -->
-    <div id="about">
-
-        <h2 style="color: #17365d;">About Me</h2>
-
-        <!-- Programming image -->
-        <img src="images/programming.jpg"
-             alt="Computer programming code on a laptop"
-             style="display: block; max-width: 500px; width: 100%; height: auto; margin: 20px auto;">
+        <h1>Ayan Felipe Echemendia-Carranza</h1>
 
         <p>
-            Hello, my full name is Ayan Felipe Echemendia-Carranza. I am currently a
-            college student studying computer programming and developing my skills in
-            software development and web development. I enjoy learning how technology
-            works and gaining practical experience by creating programs and websites.
-            My goal is to continue improving my technical skills while building a
-            professional portfolio that represents the work I accomplish during college.
+            Computer Programming Student | Web Development | Technology
         </p>
 
-        <p>
-            Technology has become an important part of my education because it gives me
-            opportunities to solve problems creatively and develop useful applications.
-            Through my coursework, I have been learning programming languages such as
-            Java and Python as well as HTML and other technologies used to create websites.
-            I am especially interested in gaining more experience with programming,
-            databases, and web development as I continue my education.
-        </p>
+    </header>
+    <!-- /header -->
 
+    <!-- Navigation menu -->
+    <nav>
 
-        <!-- Gaming section -->
-        <div style="text-align: center; margin: 25px 0;">
+        <a href="index.htm">Home</a> |
+        <a href="resume.htm">My Resume</a> |
+        <a href="#about">About Me</a> |
+        <a href="#education">Education</a> |
+        <a href="#goals">My Goals</a> |
+        <a href="#contact">Contact</a>
 
-            <img src="images/gaming.jpg"
-                 alt="Computer gaming setup with gaming equipment"
-                 style="max-width: 450px; width: 100%; height: auto;">
+    </nav>
+    <!-- /nav -->
+
+    <!-- Main content -->
+    <main>
+
+        <!-- About Me section -->
+        <div id="about">
+
+            <h2>About Me</h2>
+
+            <!-- Programming image -->
+            <img class="section-image programming-image"
+                 src="images/programming.jpg"
+                 alt="Computer programming code on a laptop">
+
+            <p>
+                Hello, my full name is Ayan Felipe Echemendia-Carranza. I am currently a
+                college student studying computer programming and developing my skills in
+                software development and web development. I enjoy learning how technology
+                works and gaining practical experience by creating programs and websites.
+                My goal is to continue improving my technical skills while building a
+                professional portfolio that represents the work I accomplish during college.
+            </p>
+
+            <p>
+                Technology has become an important part of my education because it gives me
+                opportunities to solve problems creatively and develop useful applications.
+                Through my coursework, I have been learning programming languages such as
+                Java and Python as well as HTML and other technologies used to create websites.
+                I am especially interested in gaining more experience with programming,
+                databases, and web development as I continue my education.
+            </p>
+
+            <!-- Gaming section -->
+            <div id="gaming">
+
+                <img class="section-image gaming-image"
+                     src="images/gaming.jpg"
+                     alt="Computer gaming setup with gaming equipment">
+
+            </div>
+            <!-- /gaming -->
+
+            <p>
+                Outside of school, I enjoy playing video games and spending time relaxing.
+                Video games have also influenced my interest in computers because they have
+                encouraged me to become curious about how software, graphics, and interactive
+                applications are created. I hope to use my education and personal interests
+                to build a career in the technology field.
+            </p>
 
         </div>
+        <!-- /about -->
+
+        <hr>
+
+        <!-- Education section -->
+        <div id="education">
+
+            <h2>Education</h2>
+
+            <!-- Education image -->
+            <img class="section-image education-image"
+                 src="images/education.jpg"
+                 alt="Student studying computer programming with a laptop">
+
+            <p>
+                I am currently working toward a
+                <span class="important">Computer Programmer Certificate</span>.
+                My classes are helping me develop a foundation in programming, computer
+                applications, and web development. This semester, I am taking courses
+                including COP2805, CGS1543, and CGS2820.
+            </p>
+
+            <p>
+                My current focus is completing my coursework successfully while developing
+                skills that I can eventually use in a professional environment. Each
+                programming assignment gives me an opportunity to practice writing code,
+                finding errors, solving problems, and understanding how different parts of
+                a computer program work together.
+            </p>
+
+            <p>
+                Visit the
+                <a href="https://www.scf.edu/" target="_blank">
+                    State College of Florida website
+                </a>
+                to learn more about the college and its programs.
+            </p>
+
+            <!-- Clickable image link -->
+            <p class="center-image">
+
+                <a href="https://www.scf.edu/" target="_blank">
+
+                    <img class="section-image programming-image"
+                         src="images/programming.jpg"
+                         alt="Computer programming image linking to the State College of Florida website">
+
+                </a>
+
+            </p>
+
+        </div>
+        <!-- /education -->
+
+        <hr>
+
+        <!-- My Goals section -->
+        <div id="goals">
+
+            <h2>My Goals</h2>
+
+            <p>
+                One of my main goals is to become a capable and dependable computer
+                programmer. I want to continue improving my knowledge of programming
+                languages, databases, web development, and software development practices.
+                Building projects throughout college will help me create a portfolio that
+                demonstrates my abilities to future employers.
+            </p>
+
+            <p>
+                I also want to develop professional skills such as communication,
+                organization, problem solving, and attention to detail. My long-term goal
+                is to use the education and experience I gain in college to pursue
+                opportunities in the technology industry.
+            </p>
+
+            <p>
+                <span class="important">
+                    My goal is to keep learning, keep improving, and build a professional
+                    future in technology.
+                </span>
+            </p>
+
+            <p>
+                <a href="#about">Back to About Me</a> |
+                <a href="#education">Go to Education</a> |
+                <a href="#goals">Go to My Goals</a>
+            </p>
+
+        </div>
+        <!-- /goals -->
+
+    </main>
+    <!-- /main -->
+
+    <!-- Footer with contact links -->
+    <footer id="contact">
+
+        <h2 class="contact-heading">Contact Me</h2>
 
         <p>
-            Outside of school, I enjoy playing video games and spending time relaxing.
-            Video games have also influenced my interest in computers because they have
-            encouraged me to become curious about how software, graphics, and interactive
-            applications are created. I hope to use my education and personal interests
-            to build a career in the technology field.
-        </p>
-
-    </div>
-
-
-    <hr>
-
-
-    <!-- Education section -->
-    <div id="education">
-
-        <h2 style="color: #17365d;">Education</h2>
-
-        <!-- Education image -->
-        <img src="images/education.jpg"
-             alt="Student studying computer programming with a laptop"
-             style="display: block; max-width: 600px; width: 100%; height: auto; margin: 20px auto;">
-
-        <p>
-            I am currently working toward a <b>Computer Programmer Certificate</b>.
-            My classes are helping me develop a foundation in programming, computer
-            applications, and web development. This semester, I am taking courses
-            including COP2805, CGS1543, and CGS2820.
-        </p>
-
-        <p>
-            My current focus is completing my coursework successfully while developing
-            skills that I can eventually use in a professional environment. Each
-            programming assignment gives me an opportunity to practice writing code,
-            finding errors, solving problems, and understanding how different parts of
-            a computer program work together.
-        </p>
-
-        <p>
-            Visit the
-            <a href="https://www.scf.edu/" target="_blank">
-                State College of Florida website
+            Email:
+            <a class="contact-link" href="mailto:aechemen@student.scf.edu">
+                aechemen@student.scf.edu
             </a>
-            to learn more about the college and its programs.
         </p>
 
-
-        <!-- Clickable image link -->
-        <p style="text-align: center;">
-
-            <a href="https://www.scf.edu/" target="_blank">
-
-                <img src="images/programming.jpg"
-                     alt="Computer programming image linking to the State College of Florida website"
-                     style="max-width: 300px; width: 100%; height: auto;">
-
+        <p>
+            Phone:
+            <a class="contact-link" href="tel:9417021174">
+                (941) 702-1174
             </a>
-
-        </p>
-
-    </div>
-
-
-    <hr>
-
-
-    <!-- My Goals section -->
-    <div id="goals">
-
-        <h2 style="color: #17365d;">My Goals</h2>
-
-        <p>
-            One of my main goals is to become a capable and dependable computer
-            programmer. I want to continue improving my knowledge of programming
-            languages, databases, web development, and software development practices.
-            Building projects throughout college will help me create a portfolio that
-            demonstrates my abilities to future employers.
         </p>
 
         <p>
-            I also want to develop professional skills such as communication,
-            organization, problem solving, and attention to detail. My long-term goal
-            is to use the education and experience I gain in college to pursue
-            opportunities in the technology industry.
+            <a class="contact-link" href="#about">
+                Back to Top
+            </a>
         </p>
 
-        <p>
-            <span style="color: #17365d; font-weight: bold;">
-                My goal is to keep learning, keep improving, and build a professional
-                future in technology.
-            </span>
+        <p class="copyright">
+            &copy; 2026 Ayan Felipe Echemendia-Carranza
         </p>
 
+    </footer>
+    <!-- /footer -->
 
-        <p>
-            <a href="#about">Back to About Me</a> |
-            <a href="#education">Go to Education</a> |
-            <a href="#goals">Go to My Goals</a>
-        </p>
-
-    </div>
-
-</main>
-
-
-<!-- Footer with contact links -->
-<footer id="contact"
-        style="background-color: #17365d; color: white; padding: 20px; text-align: center;">
-
-    <h2>Contact Me</h2>
-
-    <p>
-        Email:
-        <a href="mailto:aechemen@student.scf.edu" style="color: white;">
-            aechemen@student.scf.edu
-        </a>
-    </p>
-
-    <p>
-        Phone:
-        <a href="tel:9417021174" style="color: white;">
-            (941) 702-1174
-        </a>
-    </p>
-
-    <p>
-        <a href="#about" style="color: white;">
-            Back to Top
-        </a>
-    </p>
-
-    <p style="font-size: 14px;">
-        &copy; 2026 Ayan Felipe Echemendia-Carranza
-    </p>
-
-</footer>
-```
+</div>
+<!-- /wrapper -->
 
 </body>
 
