@@ -189,3 +189,16 @@ abbr {
     font-weight: bold;
     text-decoration: underline dotted;
 }
+
+/* ***** Navigation Selected and Hover Effects ***** */
+
+.selected {
+    color: white;
+    background-color: #17365d;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #17365d;
+}
