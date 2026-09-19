@@ -150,3 +150,42 @@ footer a {
 footer p {
     margin: 10px;
 }
+
+/* ***** Resume Two-Column Layout ***** */
+
+.resume-columns {
+    display: flex;
+    gap: 20px;
+    border: 2px solid #17365d;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.resume-left {
+    width: 35%;
+    padding: 20px;
+    border-right: 2px solid #17365d;
+    box-sizing: border-box;
+}
+
+.resume-right {
+    width: 65%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.resume-left h2,
+.resume-right h2 {
+    color: #17365d;
+    text-align: left;
+}
+
+address {
+    line-height: 1.6;
+    font-style: normal;
+}
+
+abbr {
+    font-weight: bold;
+    text-decoration: underline dotted;
+}
