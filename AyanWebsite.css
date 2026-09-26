@@ -64,9 +64,12 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     margin: 0 8px;
+    display: inline-block;
 }
 
 nav a:hover {
+    color: white;
+    background-color: #17365d;
     text-decoration: underline;
 }
 
@@ -151,6 +154,7 @@ footer p {
     margin: 10px;
 }
 
+
 /* ***** Resume Two-Column Layout ***** */
 
 .resume-columns {
@@ -190,7 +194,8 @@ abbr {
     text-decoration: underline dotted;
 }
 
-/* ***** Navigation Selected and Hover Effects ***** */
+
+/* ***** Navigation Selected Effect ***** */
 
 .selected {
     color: white;
@@ -198,14 +203,47 @@ abbr {
     padding: 5px;
 }
 
-nav a:hover {
-    color: white;
-    background-color: #17365d;
+
+/* ***** Mobile Responsive Styling ***** */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        text-align: left;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        padding: 5px;
+    }
+
+    .resume-columns {
+        display: block;
+    }
+
+    .resume-left {
+        width: 100%;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 2px solid #17365d;
+    }
+
+    .resume-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 40px 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .section-image {
+        max-width: 100%;
+    }
 }
 
-/* Transcript page images */
-.transcript-image {
-    width: 400px;
-    max-width: 80%;
-    height: auto;
-}
