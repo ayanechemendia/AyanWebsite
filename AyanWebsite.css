@@ -202,3 +202,10 @@ nav a:hover {
     color: white;
     background-color: #17365d;
 }
+
+/* Transcript page images */
+.transcript-image {
+    width: 400px;
+    max-width: 80%;
+    height: auto;
+}
