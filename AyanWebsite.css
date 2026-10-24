@@ -450,3 +450,60 @@ blockquote:first-letter {
         text-align: left;
     }
 }
+
+
+/* Contact page table */
+.contact-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.contact-table th {
+    background-color: #17365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    border: 1px solid #777777;
+}
+
+.contact-table td {
+    padding: 12px;
+    border: 1px solid #777777;
+    vertical-align: top;
+}
+
+.contact-table .contact-label {
+    width: 35%;
+    text-align: right;
+    font-weight: bold;
+    background-color: #f2f6fa;
+}
+
+.contact-table input,
+.contact-table textarea {
+    width: 95%;
+    max-width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.contact-table textarea {
+    resize: vertical;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-table td {
+        padding: 8px;
+    }
+
+    .contact-table .contact-label {
+        width: 40%;
+    }
+}
+
