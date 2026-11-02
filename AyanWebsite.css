@@ -507,3 +507,102 @@ blockquote:first-letter {
     }
 }
 
+
+/* Contact Form - Assignment 11 */
+
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.contact-table th {
+    background-color: #17365d;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+.contact-table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+.contact-table .contact-label {
+    width: 30%;
+    background-color: #eeeeee;
+    text-align: right;
+    font-weight: bold;
+}
+
+.contact-table input[type="text"],
+.contact-table input[type="email"],
+.contact-table select,
+.contact-table textarea {
+    width: 95%;
+    max-width: 450px;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact-table fieldset {
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+}
+
+.contact-table fieldset label {
+    margin-right: 12px;
+}
+
+.contact-table input[type="radio"],
+.contact-table input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+.contact-table .required {
+    color: #b00020;
+    font-weight: bold;
+}
+
+.contact-table .contact-buttons {
+    text-align: center;
+}
+
+.contact-table input[type="submit"],
+.contact-table input[type="reset"] {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-table input[type="submit"] {
+    background-color: #17365d;
+    color: white;
+}
+
+.contact-table input[type="reset"] {
+    background-color: #dddddd;
+    color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-table .contact-label {
+        width: 35%;
+    }
+
+    .contact-table td {
+        padding: 7px;
+    }
+
+    .contact-table fieldset label {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}

@@ -1,202 +1,232 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Contact Me | Ayan's Web Page</title>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Contact Ayan - Ayan's Web Page</title>
+
     <meta name="author" content="Ayan Felipe Echemendia-Carranza">
-    <meta name="description" content="Contact Ayan Felipe Echemendia-Carranza through his personal website.">
-    <meta name="keywords" content="Ayan Echemendia-Carranza, contact, computer programming, web development">
+    <meta name="description" content="Contact Ayan Felipe Echemendia-Carranza through this website contact form.">
 
     <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="AyanWebsite.css">
 </head>
 
 <body>
+    <div id="wrapper">
 
-<div id="wrapper">
+        <header>
+            <h1>Ayan Felipe Echemendia-Carranza</h1>
+            <p>Computer Programming Student | Web Development | Technology</p>
+        </header>
 
-    <!-- Header -->
-    <header>
-        <h1>Ayan Felipe Echemendia-Carranza</h1>
+        <nav>
+            <a href="index.htm">Home</a> |
+            <a href="resume.htm">My Resume</a> |
+            <a href="index.htm#about">About Me</a> |
+            <a href="index.htm#education">Education</a> |
+            <a href="index.htm#goals">My Goals</a> |
+            <a href="contact.htm">Contact</a>
+        </nav>
 
-        <p>
-            Computer Programming Student | Web Development | Technology
-        </p>
-    </header>
-    <!-- /header -->
+        <main>
+            <h2>Contact Me</h2>
 
-    <!-- Navigation menu -->
-    <nav>
-        <a href="index.htm">Home</a> |
-        <a href="resume.htm">My Resume</a> |
-        <a href="index.htm#about">About Me</a> |
-        <a href="index.htm#education">Education</a> |
-        <a href="index.htm#goals">My Goals</a> |
-        <a href="contact.htm" aria-current="page">Contact</a>
-    </nav>
-    <!-- /nav -->
+            <p>
+                Please complete the form below to contact me.
+                Fields marked with an asterisk (*) are required.
+            </p>
 
-    <!-- Main content -->
-    <main>
+            <form id="contactForm"
+                  name="contactForm"
+                  action="https://formsubmit.co/ayanechemendia@gmail.com"
+                  method="POST">
 
-        <h2>Contact Me</h2>
+                <input type="hidden" name="_subject" value="AyanWebsite Contact Form Submission">
+                <input type="hidden" name="_next" value="https://ayanechemendia.github.io/AyanWebsite/contactSent.htm">
+                <input type="hidden" name="_template" value="table">
 
-        <p>
-            Please use the contact information table below to prepare
-            a message. Fields marked with an asterisk (*) are required.
-        </p>
+                <table class="contact-table">
+                    <tr>
+                        <th colspan="2">Contact Information</th>
+                    </tr>
 
-        <!-- Contact information table -->
-        <table class="contact-table">
+                    <tr>
+                        <td class="contact-label">
+                            <label for="FirstName">First Name <span class="required">*</span></label>
+                        </td>
+                        <td>
+                            <input type="text" id="FirstName" name="FirstName" required>
+                        </td>
+                    </tr>
 
-            <tr>
-                <th colspan="2">Contact Information</th>
-            </tr>
+                    <tr>
+                        <td class="contact-label">
+                            <label for="LastName">Last Name <span class="required">*</span></label>
+                        </td>
+                        <td>
+                            <input type="text" id="LastName" name="LastName" required>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="firstName">First Name: *</label>
-                </td>
-                <td>
-                    <input type="text" id="firstName" name="firstName"
-                           required>
-                </td>
-            </tr>
+                    <tr>
+                        <td class="contact-label">
+                            <label for="City">City</label>
+                        </td>
+                        <td>
+                            <input type="text" id="City" name="City">
+                        </td>
+                    </tr>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="lastName">Last Name: *</label>
-                </td>
-                <td>
-                    <input type="text" id="lastName" name="lastName"
-                           required>
-                </td>
-            </tr>
+                    <tr>
+                        <td class="contact-label">
+                            <label for="State">State</label>
+                        </td>
+                        <td>
+                            <select id="State" name="State">
+                                <option value="FL" selected>Florida</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District of Columbia</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="email">Email Address: *</label>
-                </td>
-                <td>
-                    <input type="email" id="email" name="email"
-                           required>
-                </td>
-            </tr>
+                    <tr>
+                        <td class="contact-label">
+                            <label for="Zip">ZIP Code</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Zip" name="Zip"
+                                   pattern="[0-9]{5}" maxlength="5"
+                                   title="Enter a five-digit ZIP code">
+                        </td>
+                    </tr>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="phone">Phone Number:</label>
-                </td>
-                <td>
-                    <input type="tel" id="phone" name="phone">
-                </td>
-            </tr>
+                    <tr>
+                        <td class="contact-label">
+                            <label for="email">Email <span class="required">*</span></label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="address">Street Address:</label>
-                </td>
-                <td>
-                    <input type="text" id="address" name="address">
-                </td>
-            </tr>
+                    <tr>
+                        <td class="contact-label">Gender</td>
+                        <td>
+                            <fieldset>
+                                <legend>Select one</legend>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="city">City:</label>
-                </td>
-                <td>
-                    <input type="text" id="city" name="city">
-                </td>
-            </tr>
+                                <input type="radio" id="genderMale" name="Gender" value="Male">
+                                <label for="genderMale">Male</label>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="state">State:</label>
-                </td>
-                <td>
-                    <input type="text" id="state" name="state">
-                </td>
-            </tr>
+                                <input type="radio" id="genderFemale" name="Gender" value="Female">
+                                <label for="genderFemale">Female</label>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="zip">ZIP Code:</label>
-                </td>
-                <td>
-                    <input type="text" id="zip" name="zip">
-                </td>
-            </tr>
+                                <input type="radio" id="genderOther" name="Gender" value="Other">
+                                <label for="genderOther">Other</label>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="subject">Subject: *</label>
-                </td>
-                <td>
-                    <input type="text" id="subject" name="subject"
-                           required>
-                </td>
-            </tr>
+                                <input type="radio" id="genderNoAnswer" name="Gender" value="Prefer not to say">
+                                <label for="genderNoAnswer">Prefer not to say</label>
+                            </fieldset>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td class="contact-label">
-                    <label for="message">Message: *</label>
-                </td>
-                <td>
-                    <textarea id="message" name="message" rows="5"
-                              required></textarea>
-                </td>
-            </tr>
+                    <tr>
+                        <td class="contact-label">Education</td>
+                        <td>
+                            <fieldset>
+                                <legend>Select all that apply</legend>
 
-        </table>
+                                <input type="checkbox" id="highSchool" name="HighSchool" value="High School">
+                                <label for="highSchool">High School</label>
 
-        <p>
-            <a href="index.htm">Return to Home Page</a>
-        </p>
+                                <input type="checkbox" id="college" name="College" value="College">
+                                <label for="college">College</label>
 
-    </main>
-    <!-- /main -->
+                                <input type="checkbox" id="otherEducation" name="OtherEducation" value="Other">
+                                <label for="otherEducation">Other</label>
+                            </fieldset>
+                        </td>
+                    </tr>
 
-    <!-- Footer -->
-    <footer id="contact">
+                    <tr>
+                        <td class="contact-label">
+                            <label for="Comments">Comments <span class="required">*</span></label>
+                        </td>
+                        <td>
+                            <textarea id="Comments" name="Comments" rows="6" cols="40" required></textarea>
+                        </td>
+                    </tr>
 
-        <h2 class="contact-heading">Contact Me</h2>
+                    <tr>
+                        <td colspan="2" class="contact-buttons">
+                            <input type="submit" value="Submit Form">
+                            <input type="reset" value="Reset Form">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
 
-        <p>
-            Email:
-            <a class="contact-link"
-               href="mailto:aechemen@student.scf.edu">
-                aechemen@student.scf.edu
-            </a>
-        </p>
+        <footer id="contact">
+            <p>Email: <a href="mailto:aechemen@student.scf.edu">aechemen@student.scf.edu</a></p>
+            <p>Phone: <a href="tel:9417021174">(941) 702-1174</a></p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>&copy; 2026 Ayan Felipe Echemendia-Carranza</p>
+        </footer>
 
-        <p>
-            Phone:
-            <a class="contact-link" href="tel:9417021174">
-                (941) 702-1174
-            </a>
-        </p>
-
-        <p>
-            <a class="contact-link" href="index.htm">
-                Back to Home Page
-            </a>
-        </p>
-
-        <p class="copyright">
-            &copy; 2026 Ayan Felipe Echemendia-Carranza
-        </p>
-
-    </footer>
-    <!-- /footer -->
-
-</div>
-<!-- /wrapper -->
+    </div><!-- End wrapper -->
 
 </body>
 </html>
