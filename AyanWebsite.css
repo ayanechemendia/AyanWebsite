@@ -606,3 +606,69 @@ blockquote:first-letter {
         margin-bottom: 8px;
     }
 }
+
+
+/* Assignment 13 - Media Page */
+
+.media-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.media-section h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+.media-player {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.media-gif {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.slideshow {
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.slideshow img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid #17365d;
+}
+
+.slideshow-controls {
+    margin: 15px 0;
+}
+
+.slideshow-controls button {
+    background-color: #17365d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.slideshow-controls button:hover {
+    background-color: #24558a;
+}
+
+#slideshow-caption {
+    font-weight: bold;
+    color: darkblue;
+    margin: 12px 0;
+}
